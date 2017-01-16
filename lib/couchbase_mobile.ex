@@ -54,6 +54,7 @@ defmodule CouchbaseMobile do
     """
     defdelegate get_document(id),      to: CouchbaseMobile.API.Document
     defdelegate get_document(id, rev), to: CouchbaseMobile.API.Document
+    defdelegate get_all_documents, to: CouchbaseMobile.API.Document
 
     @doc """
     Deletes a document.
